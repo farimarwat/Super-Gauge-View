@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SuperGaugeView">
+        <attr name="gaugeText" format="string"/>
+        <attr name="gaugeTextColor" format="color"/>
+        <attr name="duration" format="integer"/>
+        <attr name="progressBackground" format="enum">
+            <enum name="gauge_keyhole_1" value="1"/>
+            <enum name="gauge_keyhole_2" value="2"/>
+            <enum name="gauge_keyhole_3" value="3"/>
+            <enum name="gauge_keyhole_4" value="4"/>
+            <enum name="gauge_keyhole_5" value="5"/>
+            <enum name="gauge_keyhole_6" value="6"/>
+            <enum name="gauge_keyhole_7" value="7"/>
+            <enum name="gauge_keyhole_8" value="8"/>
+            <enum name="gauge_keyhole_9" value="9"/>
+            <enum name="gauge_keyhole_10" value="10"/>
+            <enum name="gauge_keyhole_11" value="11"/>
+            <enum name="gauge_keyhole_12" value="12"/>
+            <enum name="gauge_keyhole_13" value="13"/>
+            <enum name="gauge_keyhole_14" value="14"/>
+            <enum name="gauge_keyhole_15" value="15"/>
+            <enum name="gauge_keyhole_16" value="16"/>
+            <enum name="gauge_keyhole_17" value="17"/>
+            <enum name="gauge_keyhole_18" value="18"/>
+            <enum name="gauge_keyhole_19" value="19"/>
+            <enum name="gauge_keyhole_20" value="20"/>
+        </attr>
+        <attr name="gaugebottomicon" format="reference"/>
+
+    </declare-styleable>
+</resources>

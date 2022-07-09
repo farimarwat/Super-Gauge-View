@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:background="@color/colorBackground"
+    >
+    <RelativeLayout android:scaleX="0.7"
+        android:scaleY="0.7"
+        android:layout_width="360dp"
+        android:layout_height="360dp"
+        >
+
+        <ImageView
+            android:id="@+id/progressbar"
+            android:scaleY="1.056"
+            android:scaleX="1.056"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/gauge_keyhole_2"/>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorBackground" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorBackground" />
+        <View
+            android:layout_alignParentEnd="true"
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorBackground" />
+        <View
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorBackground" />
+
+        <com.dinuscxj.progressbar.CircleProgressBar
+            android:id="@+id/my_cpb"
+            android:rotation="-131"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:style="solid"
+            app:progress_stroke_width="10dp"
+            app:drawBackgroundOutsideProgress="true"
+            app:progress_background_color="@color/colorCircularProgressBarBackground"
+            app:progress_start_color="@color/colorTransparent"
+            app:progress_end_color="@color/colorTransparent"
+
+            app:progress_shader="sweep"
+
+            app:progress_stroke_cap="square" />
+
+        <com.dinuscxj.progressbar.CircleProgressBar
+            android:id="@+id/my_cpb_shadow_hide"
+            android:rotation="-131"
+            android:layout_margin="32dp"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            app:style="solid"
+
+            app:progress_stroke_width="10dp"
+            app:drawBackgroundOutsideProgress="true"
+            app:progress_background_color="@color/colorBackground"
+            app:progress_start_color="@color/colorTransparent"
+            app:progress_end_color="@color/colorTransparent"
+
+            app:progress_shader="sweep"
+
+            app:progress_stroke_cap="square" />
+
+        <ImageView
+            android:layout_margin="0.8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_gauge_keyhole_window"/>
+
+        <ImageView
+            android:id="@+id/imageViewNeedle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:rotation="131"
+            android:scaleX="0.9"
+            android:scaleY="0.9"
+            android:src="@drawable/needle" />
+
+        <TextView
+            android:id="@+id/textView0CPB"
+            android:layout_marginTop="252dp"
+            android:layout_marginStart="76dp"
+            android:layout_width="70dp"
+            android:layout_height="28dp"
+            android:text="0"
+            android:textAlignment="textStart"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/gotham_ssm"
+            android:textColor="@color/colorNotActiveGaugeText"/>
+        <TextView
+            android:id="@+id/textView20CPB"
+            android:layout_marginTop="188dp"
+            android:layout_marginStart="46dp"
+            android:layout_width="70dp"
+            android:layout_height="28dp"
+            android:text="15"
+            android:textAlignment="textStart"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/gotham_ssm"
+            android:textColor="@color/colorNotActiveGaugeText"/>
+        <TextView
+            android:id="@+id/textView30CPB"
+            android:layout_marginTop="118dp"
+            android:layout_marginStart="56dp"
+            android:layout_width="70dp"
+            android:layout_height="28dp"
+            android:text="30"
+            android:textAlignment="textStart"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/gotham_ssm"
+            android:textColor="@color/colorNotActiveGaugeText"/>
+        <TextView
+            android:id="@+id/textView50CPB"
+            android:layout_marginTop="65dp"
+            android:layout_marginStart="101dp"
+            android:layout_width="70dp"
+            android:layout_height="28dp"
+            android:text="45"
+            android:textAlignment="textStart"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/gotham_ssm"
+            android:textColor="@color/colorNotActiveGaugeText"/>
+        <TextView
+            android:id="@+id/textView60CPB"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="145dp"
+            android:layout_width="70dp"
+            android:layout_height="28dp"
+            android:text="60"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/gotham_ssm"
+            android:textColor="@color/colorNotActiveGaugeText"/>
+        <TextView
+            android:id="@+id/textView70CPB"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="65dp"
+            android:layout_marginEnd="101dp"
+            android:layout_width="70dp"
+            android:layout_height="28dp"
+            android:text="75"
+            android:textAlignment="textEnd"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/gotham_ssm"
+            android:textColor="@color/colorNotActiveGaugeText"/>
+        <TextView
+            android:id="@+id/textView90CPB"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="118dp"
+            android:layout_marginEnd="56dp"
+            android:layout_width="80dp"
+            android:layout_height="28dp"
+            android:text="90"
+            android:textAlignment="textEnd"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/gotham_ssm"
+            android:textColor="@color/colorNotActiveGaugeText"/>
+        <TextView
+            android:id="@+id/textView100CPB"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="188dp"
+            android:layout_marginEnd="46dp"
+            android:layout_width="70dp"
+            android:layout_height="28dp"
+            android:text="105"
+            android:textAlignment="textEnd"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/gotham_ssm"
+            android:textColor="@color/colorNotActiveGaugeText"/>
+        <TextView
+            android:id="@+id/textView120CPB"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="254dp"
+            android:layout_marginEnd="76dp"
+            android:layout_width="70dp"
+            android:layout_height="28dp"
+            android:text="120"
+            android:textAlignment="textEnd"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/gotham_ssm"
+            android:textColor="@color/colorNotActiveGaugeText"/>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutGaugeCurrentDb"
+            android:layout_marginBottom="14dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="200dp"
+            android:layout_height="82dp">
+
+            <TextView
+                android:id="@+id/textViewCurrentDbCPB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/gauge_mono_regular"
+                android:text="00.0"
+                android:textAlignment="center"
+                android:textColor="@color/colorActiveGaugeText"
+                android:textSize="56sp" />
+
+            <RelativeLayout
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:gravity="center">
+                <ImageView
+                    android:id="@+id/imageDecibelCPB"
+                    android:layout_centerVertical="true"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_outline_surround_sound"
+                    app:tint="#6afff3" />
+                <TextView
+                    android:id="@+id/textViewDecibelCPB"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="23dp"
+                    android:layout_toEndOf="@+id/imageDecibelCPB"
+                    android:text="@string/gaugeText"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/gotham_ssm"
+                    android:textColor="#809193a8" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</LinearLayout>

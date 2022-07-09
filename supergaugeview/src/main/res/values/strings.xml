@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SuperGaugeView</string>
+    <string name="speed">speed</string>
+    <string name="gaugeText">Speed</string>
+</resources>
