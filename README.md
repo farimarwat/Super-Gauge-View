@@ -33,7 +33,7 @@ implementation 'com.github.farimarwat:Super-Gauge-View:1.0'
 | app:gaugeText="Upload"  |  Gauge View Text |
 | app:gaugeTextColor="@color/white" | Change bottom gauge text color  |
 | app:gaugebottomicon="@drawable/ic_baseline_arrow_circle_down_24" |  Set bottom small icon  |
-| app:gaugebottomicon="@drawable/ic_baseline_arrow_circle_down_24" |  Set bottom small icon  |
+| app:gaugebottomiconcolor="@color/white"|  Set bottom small icon color  |
 | app:progressBackground="gauge_keyhole_7" |  Setting progress background |
 |  |   |
 
@@ -46,6 +46,7 @@ implementation 'com.github.farimarwat:Super-Gauge-View:1.0'
 | `setGaugeText(value:String)`  | Set bottom text   |
 |  `setProgressBackground(background:String)` | To set the progress background e.g. setProgressBackground(SuperGaugeView.GAUGE_KEYHOLE_1). It has 20 gradient backgrounds  |
 | `setGaugeBottomIcon(icon:Drawable)`  | Set bottom small icon  |
+| `setGaugeBottomIconColor(color: Int)`  | Set bottom small icon color |
 | `setProgress(value:Float)`  | Progress must be float and needle will be only rotate up to 120  |
 |   |   |
 
