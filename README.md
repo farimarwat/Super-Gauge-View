@@ -73,6 +73,9 @@ addGaugeListener(object :SuperGaugeView.GaugeListener{
             override fun onProgress(progress: Float) {
                 Log.e("TEST","Gauge: ${progress}")
             }
+	    override fun onStartPreparing() {
+                Log.e("TEST","Gauge preparing started")
+            }
 			override fun onGaugePrepared(prepared: Boolean) {
                 Log.e("TEST","isPrepared: ${prepared}")
             }
