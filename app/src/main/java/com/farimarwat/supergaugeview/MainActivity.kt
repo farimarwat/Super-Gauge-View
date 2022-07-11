@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
-        binding.mygaugeview.prepareGauge(this)
+
         binding.mygaugeview.addGaugeListener(object :SuperGaugeView.GaugeListener{
             override fun onProgress(progress: Float) {
                 Log.e("TEST","Gauge: ${progress}")
@@ -37,7 +37,7 @@ class MainActivity : AppCompatActivity() {
             }
 
         })
-
+        binding.mygaugeview.prepareGauge(this)
 
     }
 }

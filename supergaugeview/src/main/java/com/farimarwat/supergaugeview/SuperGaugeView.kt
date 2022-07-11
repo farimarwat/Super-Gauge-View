@@ -211,6 +211,11 @@ class SuperGaugeView(context: Context, attrs: AttributeSet) : LinearLayout(conte
                 it
             )
         }
+        val gaugebottomiconcolor = typedarray.getColor(
+            R.styleable.SuperGaugeView_gaugebottomiconcolor,
+            GAUGEBOTTOMICON_COLOR
+        )
+        img_gaugebottomicon.setColorFilter(gaugebottomiconcolor)
     }
 
     fun getDuration():Long{
@@ -343,6 +348,12 @@ class SuperGaugeView(context: Context, attrs: AttributeSet) : LinearLayout(conte
         icon?.let {
             img_gaugebottomicon.setImageDrawable(it)
         }
+    }
+    fun setGaugeBottomIconColor(color: Int){
+        val img_gaugebottomicon = findViewById<ImageView>(R.id.imageDecibelCPB)
+        img_gaugebottomicon.setColorFilter(
+            ContextCompat.getColor(context,color)
+        )
     }
     fun prepareGauge(context: Context) {
 
@@ -502,6 +513,7 @@ class SuperGaugeView(context: Context, attrs: AttributeSet) : LinearLayout(conte
     companion object {
         val GAUGE_TEXT = "Speed"
         val DURATION = 2000
+        val GAUGEBOTTOMICON_COLOR = Color.CYAN
 
         //progress background
         val GAUGE_KEYHOLE_1 = 1

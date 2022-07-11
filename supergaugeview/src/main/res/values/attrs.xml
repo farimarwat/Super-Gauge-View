@@ -27,6 +27,7 @@
             <enum name="gauge_keyhole_20" value="20"/>
         </attr>
         <attr name="gaugebottomicon" format="reference"/>
+        <attr name="gaugebottomiconcolor" format="color"/>
 
     </declare-styleable>
 </resources>
