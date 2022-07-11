@@ -33,6 +33,7 @@ implementation 'com.github.farimarwat:Super-Gauge-View:1.0'
 | app:gaugeText="Upload"  |  Gauge View Text |
 | app:gaugeTextColor="@color/white" | Change bottom gauge text color  |
 | app:gaugebottomicon="@drawable/ic_baseline_arrow_circle_down_24" |  Set bottom small icon  |
+| app:gaugebottomicon="@drawable/ic_baseline_arrow_circle_down_24" |  Set bottom small icon  |
 | app:progressBackground="gauge_keyhole_7" |  Setting progress background |
 |  |   |
 
