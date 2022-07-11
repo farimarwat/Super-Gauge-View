@@ -411,7 +411,7 @@ class SuperGaugeView(context: Context, attrs: AttributeSet) : LinearLayout(conte
         }
         animatorGauge.addListener(object :Animator.AnimatorListener{
             override fun onAnimationStart(animation: Animator?) {
-                mGaugeListener?.onGaugePrepared(false)
+                mGaugeListener?.onStartPreparing()
             }
 
             override fun onAnimationEnd(animation: Animator?) {
@@ -543,6 +543,7 @@ class SuperGaugeView(context: Context, attrs: AttributeSet) : LinearLayout(conte
     }
     interface GaugeListener{
         fun onProgress(progress:Float)
+        fun onStartPreparing()
         fun onGaugePrepared(prepared:Boolean)
     }
 }
