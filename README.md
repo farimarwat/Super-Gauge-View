@@ -1,5 +1,7 @@
 
 ## Super Gauge View
+![Demo](demo.gif)
+
 An android Speed/Gauge View purly written in kotlin. It is super simple and you can use it in any project like Internet Test Speed, Android Games or other speed measuring and visualizing purposes.
 It has 20 progress bar gradients and super easy to implement in your project.
 #### Implementation
