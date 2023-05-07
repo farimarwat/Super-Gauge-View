@@ -42,6 +42,7 @@ class MainActivity : AppCompatActivity() {
 
         })
         binding.mygaugeview.prepareGauge(this)
+        binding.mygaugeview.setMaxProgress(240f)
 
     }
 }

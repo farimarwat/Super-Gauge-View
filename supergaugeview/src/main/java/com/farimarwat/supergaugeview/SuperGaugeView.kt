@@ -17,6 +17,7 @@ import com.dinuscxj.progressbar.CircleProgressBar
 
 class SuperGaugeView(context: Context, attrs: AttributeSet) : LinearLayout(context, attrs) {
     private val mProgress = 0
+    private var maxProgress=120f;
     private lateinit var mCircleProgressBar: CircleProgressBar
     private lateinit var mCircleProgressBarShadowHide: CircleProgressBar
     private lateinit var imageViewNeedle: ImageView
@@ -42,12 +43,13 @@ class SuperGaugeView(context: Context, attrs: AttributeSet) : LinearLayout(conte
             mGaugeListener?.let { listener ->
                 listener.onProgress(txt_progress)
             }
-            if(progress > 120) {
-                progress = 120f
+            if(progress > maxProgress) {
+                progress = maxProgress
             }
-            mCircleProgressBar.progress = progress.toInt()
-            mCircleProgressBarShadowHide.progress = progress.toInt()
-            imageViewNeedle.rotation = (2.19166667 * progress).toFloat()
+            val newProgress=(progress/maxProgress*120)
+            mCircleProgressBar.progress = newProgress.toInt()
+            mCircleProgressBarShadowHide.progress = newProgress.toInt()
+            imageViewNeedle.rotation = (2.19166667 * newProgress).toFloat()
             textViewCurrentDbCPB.text = String.format("%.2f", txt_progress)
             for (i in 0..8) {
                 if (textViewCPBLabelValues[i] < progress) textViewCPBLabels[i]?.setTextColor(
@@ -545,5 +547,15 @@ class SuperGaugeView(context: Context, attrs: AttributeSet) : LinearLayout(conte
         fun onProgress(progress:Float)
         fun onStartPreparing()
         fun onGaugePrepared(prepared:Boolean)
+    }
+
+    fun setMaxProgress(maxProgress:Float){
+        val oldMax=textViewCPBLabelValues.last()
+        this.maxProgress=maxProgress
+        val rate=maxProgress/oldMax
+        textViewCPBLabelValues.forEachIndexed { i, it ->
+            textViewCPBLabelValues[i] = (rate * it).toInt()
+            textViewCPBLabels[i]?.text = textViewCPBLabelValues[i].toString()
+        }
     }
 }
