@@ -15,4 +15,3 @@ dependencyResolutionManagement {
 rootProject.name = "SuperGaugeView"
 include ':app'
 include ':supergaugeview'
-include ':circleprogressbar'

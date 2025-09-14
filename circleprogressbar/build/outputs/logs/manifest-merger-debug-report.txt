@@ -1,0 +1,22 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/farmanullah/StudioProjects/Super-Gauge-View/circleprogressbar/src/main/AndroidManifest.xml:1:1-7:12
+INJECTED from /Users/farmanullah/StudioProjects/Super-Gauge-View/circleprogressbar/src/main/AndroidManifest.xml:1:1-7:12
+	package
+		INJECTED from /Users/farmanullah/StudioProjects/Super-Gauge-View/circleprogressbar/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/farmanullah/StudioProjects/Super-Gauge-View/circleprogressbar/src/main/AndroidManifest.xml:1:11-69
+application
+ADDED from /Users/farmanullah/StudioProjects/Super-Gauge-View/circleprogressbar/src/main/AndroidManifest.xml:3:5-5:19
+	android:label
+		ADDED from /Users/farmanullah/StudioProjects/Super-Gauge-View/circleprogressbar/src/main/AndroidManifest.xml:3:45-77
+	android:allowBackup
+		ADDED from /Users/farmanullah/StudioProjects/Super-Gauge-View/circleprogressbar/src/main/AndroidManifest.xml:3:18-44
+uses-sdk
+INJECTED from /Users/farmanullah/StudioProjects/Super-Gauge-View/circleprogressbar/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/farmanullah/StudioProjects/Super-Gauge-View/circleprogressbar/src/main/AndroidManifest.xml
+INJECTED from /Users/farmanullah/StudioProjects/Super-Gauge-View/circleprogressbar/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/farmanullah/StudioProjects/Super-Gauge-View/circleprogressbar/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/farmanullah/StudioProjects/Super-Gauge-View/circleprogressbar/src/main/AndroidManifest.xml

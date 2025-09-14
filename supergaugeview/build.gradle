@@ -1,10 +1,11 @@
 plugins {
     id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
+    id "com.vanniktech.maven.publish" version "0.33.0"
 }
 
 android {
-    compileSdk 36
+    compileSdkVersion 36
     namespace 'com.farimarwat.supergaugeview'
     defaultConfig {
         minSdk 21
@@ -29,13 +30,45 @@ android {
     }
 }
 
+mavenPublishing {
+    coordinates "io.github.farimarwat", "Super-Gauge-View", "1.1"
+
+    pom {
+        name.set("MaxGuard")
+        description.set("An android Speed/Gauge View purly written in kotlin. It is super simple and you can use it in any project like Internet Test Speed, Android Games or other speed measuring and visualizing purposes. It has 20 progress bar gradients and super easy to implement in your project.")
+        inceptionYear.set("2025")
+        url.set("https://github.com/farimarwat/Super-Gauge-View")
+
+        licenses {
+            license {
+                name.set("MIT")
+                url.set("https://opensource.org/licenses/MIT")
+            }
+        }
+
+        developers {
+            developer {
+                id.set("farimarwat")
+                name.set("Farman Ullah Khan Marwat")
+                email.set("farimarwat@gmail.com")
+            }
+        }
+
+        scm {
+            url.set("https://github.com/farimarwat/Super-Gauge-View")
+        }
+    }
+
+    publishToMavenCentral()
+
+    signAllPublications()
+}
 dependencies {
 
-    implementation 'androidx.core:core-ktx:1.8.0'
-    implementation 'androidx.appcompat:appcompat:1.4.2'
-    implementation 'com.google.android.material:material:1.6.1'
+    implementation 'androidx.core:core-ktx:1.17.0'
+    implementation 'androidx.appcompat:appcompat:1.7.1'
+    implementation 'com.google.android.material:material:1.13.0'
     testImplementation 'junit:junit:4.13.2'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
-    implementation project(':circleprogressbar')
+    androidTestImplementation 'androidx.test.ext:junit:1.3.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.7.0'
 }

@@ -1,0 +1,30 @@
+com.dinuscxj.circleprogressbar
+attr drawBackgroundOutsideProgress
+attr line_count
+attr line_width
+attr progress_background_color
+attr progress_blur_radius
+attr progress_blur_style
+attr progress_end_color
+attr progress_shader
+attr progress_start_color
+attr progress_start_degree
+attr progress_stroke_cap
+attr progress_stroke_width
+attr progress_style
+attr progress_text_color
+attr progress_text_size
+id butt
+id inner
+id line
+id linear
+id normal
+id outer
+id radial
+id round
+id solid
+id solid_line
+id square
+id sweep
+string app_name
+styleable CircleProgressBar drawBackgroundOutsideProgress line_count line_width progress_background_color progress_blur_radius progress_blur_style progress_end_color progress_shader progress_start_color progress_start_degree progress_stroke_cap progress_stroke_width progress_style progress_text_color progress_text_size

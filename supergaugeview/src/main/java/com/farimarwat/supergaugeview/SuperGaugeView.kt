@@ -12,7 +12,6 @@ import android.widget.LinearLayout
 import android.widget.RelativeLayout
 import android.widget.TextView
 import androidx.core.content.ContextCompat
-import com.dinuscxj.progressbar.CircleProgressBar
 
 
 class SuperGaugeView(context: Context, attrs: AttributeSet) : LinearLayout(context, attrs) {

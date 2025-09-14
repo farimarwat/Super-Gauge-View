@@ -16,7 +16,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:gaugeText="Speed"
         app:duration="1000"
-        app:progressBackground="gauge_keyhole_6"
+        app:progressBackground="gauge_keyhole_14"
         app:gaugeTextColor="@color/white"
         app:gaugebottomicon="@drawable/ic_baseline_arrow_circle_down_24"
         app:gaugebottomiconcolor="@color/white"
