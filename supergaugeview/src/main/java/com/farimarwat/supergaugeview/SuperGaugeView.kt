@@ -373,7 +373,7 @@ class SuperGaugeView(context: Context, attrs: AttributeSet) : LinearLayout(conte
         mCircleProgressBarShadowHide = findViewById(R.id.my_cpb_shadow_hide)
         mCircleProgressBar.max = 165
         mCircleProgressBarShadowHide.max = 165
-        mCircleProgressBar.isDrawBackgroundOutsideProgress = true
+        mCircleProgressBar.setDrawBackgroundOutsideProgress(true)
         mCircleProgressBar.setProgressBackgroundColor(
             ContextCompat.getColor(
                 context,
@@ -410,21 +410,22 @@ class SuperGaugeView(context: Context, attrs: AttributeSet) : LinearLayout(conte
             mCircleProgressBar.progress = progress
         }
         animatorGauge.addListener(object :Animator.AnimatorListener{
-            override fun onAnimationStart(animation: Animator?) {
+            override fun onAnimationCancel(p0: Animator) {
+
+            }
+
+            override fun onAnimationEnd(p0: Animator) {
+
+            }
+
+            override fun onAnimationRepeat(p0: Animator) {
+
+            }
+
+            override fun onAnimationStart(p0: Animator) {
                 mGaugeListener?.onStartPreparing()
             }
 
-            override fun onAnimationEnd(animation: Animator?) {
-
-            }
-
-            override fun onAnimationCancel(animation: Animator?) {
-
-            }
-
-            override fun onAnimationRepeat(animation: Animator?) {
-
-            }
 
         })
         animatorGauge.repeatCount = 0
@@ -450,7 +451,7 @@ class SuperGaugeView(context: Context, attrs: AttributeSet) : LinearLayout(conte
                 imageViewNeedle.visibility = VISIBLE
                 mRelativeLayoutGaugeCurrentDb.visibility = VISIBLE
                 imageViewNeedle.rotation = 0f
-                mCircleProgressBar.isDrawBackgroundOutsideProgress = true
+                mCircleProgressBar.setDrawBackgroundOutsideProgress(true)
                 mCircleProgressBar.setProgressBackgroundColor(
                     ContextCompat.getColor(
                         context,
@@ -473,21 +474,22 @@ class SuperGaugeView(context: Context, attrs: AttributeSet) : LinearLayout(conte
             }
         }
         animatorText.addListener(object :Animator.AnimatorListener{
-            override fun onAnimationStart(animation: Animator?) {
+            override fun onAnimationCancel(p0: Animator) {
 
             }
 
-            override fun onAnimationEnd(animation: Animator?) {
+            override fun onAnimationEnd(p0: Animator) {
                 mGaugeListener?.onGaugePrepared(true)
             }
 
-            override fun onAnimationCancel(animation: Animator?) {
+            override fun onAnimationRepeat(p0: Animator) {
 
             }
 
-            override fun onAnimationRepeat(animation: Animator?) {
+            override fun onAnimationStart(p0: Animator) {
 
             }
+
 
         })
         animatorText.repeatCount = 0

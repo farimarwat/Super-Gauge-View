@@ -46,7 +46,6 @@
             android:layout_centerInParent="true"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            app:style="solid"
             app:progress_stroke_width="10dp"
             app:drawBackgroundOutsideProgress="true"
             app:progress_background_color="@color/colorCircularProgressBarBackground"
@@ -65,7 +64,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
 
-            app:style="solid"
+            app:progress_style="solid"
 
             app:progress_stroke_width="10dp"
             app:drawBackgroundOutsideProgress="true"

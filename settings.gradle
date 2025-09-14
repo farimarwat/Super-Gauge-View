@@ -3,7 +3,6 @@ pluginManagement {
         gradlePluginPortal()
         google()
         mavenCentral()
-        maven { url 'https://jitpack.io' }
     }
 }
 dependencyResolutionManagement {
@@ -11,10 +10,9 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
-        maven { url 'https://jitpack.io' }
-        jcenter()
     }
 }
 rootProject.name = "SuperGaugeView"
 include ':app'
 include ':supergaugeview'
+include ':circleprogressbar'
