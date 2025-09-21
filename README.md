@@ -5,23 +5,11 @@
 An android Speed/Gauge View purly written in kotlin. It is super simple and you can use it in any project like Internet Test Speed, Android Games or other speed measuring and visualizing purposes.
 It has 20 progress bar gradients and super easy to implement in your project.
 #### Implementation
+
 ##### Step 1
-Insert it in your settings.gradle file
-```
-dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
-    repositories {
-        .......
-        ......
-        maven { url 'https://jitpack.io' }
-        jcenter()
-    }
-}
-```
-##### Step 2
 include this in module based gradle file
 ```
-implementation 'com.github.farimarwat:Super-Gauge-View:1.0'
+implementation ("io.github.farimarwat:Super-Gauge-View:1.3")
 ```
 **Note: Due to another dependency of circularprogressbar, jcenter() is must to include. Otherwise this dependency will not work**
 
