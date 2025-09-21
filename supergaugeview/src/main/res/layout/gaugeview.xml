@@ -41,7 +41,7 @@
             android:layout_height="2dp"
             android:background="@color/colorBackground" />
 
-        <com.farimarwat.supergaugeview.CircleProgressBar
+        <com.dinuscxj.progressbar.CircleProgressBar
             android:id="@+id/my_cpb"
             android:rotation="-131"
             android:layout_centerInParent="true"
@@ -53,10 +53,11 @@
             app:progress_start_color="@color/colorTransparent"
             app:progress_end_color="@color/colorTransparent"
             app:progress_shader="sweep"
+            app:progress_stroke_cap="square"
+            app:progress_style="solid"
+            />
 
-            app:progress_stroke_cap="square" />
-
-        <com.farimarwat.supergaugeview.CircleProgressBar
+        <com.dinuscxj.progressbar.CircleProgressBar
             android:id="@+id/my_cpb_shadow_hide"
             android:rotation="-131"
             android:layout_margin="32dp"
@@ -68,10 +69,10 @@
             app:progress_background_color="@color/colorBackground"
             app:progress_start_color="@color/colorTransparent"
             app:progress_end_color="@color/colorTransparent"
-
             app:progress_shader="sweep"
-
-            app:progress_stroke_cap="square" />
+            app:progress_stroke_cap="square"
+            app:progress_style="solid"
+            />
 
         <ImageView
             android:layout_margin="0.8dp"
